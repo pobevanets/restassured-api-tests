@@ -1,0 +1,53 @@
+# Gradle build output
+/build/
+/.gradle/
+
+# Ignore Gradle wrapper logs
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties.lock
+
+# Ignore local Gradle configuration
+.gradle/
+**/build/
+**/out/
+
+# Ignore Gradle cache in user home directory (not necessary unless committed by mistake)
+# ~/.gradle/
+
+# IntelliJ IDEA / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Linux
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+
+# Java-specific
+*.class
+
+# Kotlin-specific
+*.kotlin_module
