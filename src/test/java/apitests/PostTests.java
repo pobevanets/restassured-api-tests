@@ -41,4 +41,18 @@ public class PostTests {
                 .statusCode(200)
                 .body("id", equalTo(1));
     }
+
+    @Test
+    public void testCreatePost() {
+        System.out.println("=== TEST IS RUNNING ===");
+
+        Response response = RestAssured
+                .given()
+                .contentType("application/json")
+                .body("{ \"title\": \"foo\", \"body\": \"bar\", \"userId\": 1 }")
+                .post("https://jsonplaceholder.typicode.com/posts");
+
+        response.prettyPrint();
+        Assert.assertEquals(response.getStatusCode(), 201);
+    }
 }
